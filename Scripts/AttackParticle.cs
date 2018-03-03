@@ -16,7 +16,7 @@ public class AttackParticle : MonoBehaviour {
 
     private void OnEnable()
     {
-        tileMap = GameObject.FindGameObjectWithTag("MasterTiles").GetComponent<Tilemap>();
+        tileMap = GameObject.FindGameObjectWithTag("Tiles").GetComponent<Tilemap>();
         StartCoroutine(WaitTimer(waitTime));
     }
 
